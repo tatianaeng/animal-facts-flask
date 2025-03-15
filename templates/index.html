@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - Animal Facts{% endblock %}
+
+{% block content %}
+    <h2>If you're looking to learn a fun animal fact, you've come to the right place!</h2>
+    <p>Try visiting one of the following links:</p>
+    <ul>
+        <li><a href="{{ url_for('fact', animal='dog') }}">Dog Fact</a></li>
+        <li><a href="{{ url_for('fact', animal='cat') }}">Cat Fact</a></li>
+        <li><a href="{{ url_for('fact', animal='elephant') }}">Elephant Fact</a></li>
+    </ul>
+{% endblock %}
