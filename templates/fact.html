@@ -1,9 +1,0 @@
-{% extends 'base.html' %}
-
-{% block title %}{{ animal|capitalize }} Fact{% endblock %}
-
-{% block content %}
-    <h2>{{ animal|capitalize }} Fact</h2>
-    <p>{{ fact }}</p>
-    <a href="{{ url_for('home') }}">Go back to homepage</a>
-{% endblock %}
